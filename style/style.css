@@ -1,21 +1,28 @@
 /* RESET/BASIC STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 :root {
   --white: #ffffff;
-  --light-grey: #edf0f1;
-  --violet: #655be1;
-  --dark-violet: #5146e1;
+  --light-grey: #232323;
+  --gold: #c09c32;
+  --dark-gold: #e1b846;
   --black: #21232a;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "EB Garamond", serif;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 ul {
   list-style: none;
 }
@@ -25,32 +32,34 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  text-align: center;
-  padding: 0 20px;
-  width: 100%;
-  height: 100vh;
-  background: var(--light-grey);
-  color: var(--white);
-  /* background-image: url(Md_Sahabiar_Farri.jpeg); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: inherit;
-}
-
 .notification {
   position: absolute;
   top: 0;
   right: 0;
   padding: 20px;
   border-radius: 15px;
-  background: var(--violet);
+  background: var(--gold);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+/* Header section design */
+header {
+  background-image: url(../src/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.logo{
+  width: 150px;
+}
+
+
 
 /* MAIN STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -61,9 +70,9 @@ body {
   /* max-width: 400px; */
   /* padding-bottom: 20px; */
   border-radius: 5px 5px 25px 25px;
-  background: var(--white);
-  box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
-    rgb(0 0 0 / 15%) 0 18px 36px -18px;
+  background: transparent;
+  box-shadow: #fcfcfc1a 0 30px 60px -12px,
+    rgba(255, 255, 255, 0.15) 0 18px 36px -18px;
 }
 
 .nav [type='checkbox'] {
@@ -84,7 +93,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
-  background: var(--violet);
+  background: var(--gold);
   border-radius: 50%;
   transform: translateY(-48%);
   transition: all 0.2s;
@@ -95,7 +104,7 @@ body {
 }
 
 .nav [type='checkbox'] + label:hover {
-  background: var(--dark-violet);
+  background: var(--dark-gold);
 }
 
 .menu li {
@@ -129,7 +138,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--violet);
+  background: var(--gold);
 }
 
 .menu li a span {
@@ -143,12 +152,12 @@ body {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
-  color: var(--black);
+  color: var(--white);
   font-weight: bold;
 }
 
 .nav input:checked + label {
-  background: var(--black);
+  background: var(--white);
   transform: translateY(calc(-50% + 4px));
 }
 
@@ -183,12 +192,11 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
   position: fixed;
-  right: 0;
-  bottom: 60px;
+  bottom: 0;
   display: flex;
   align-items: center;
   padding: 5px;
-  color: var(--black);
+  color: var(--white);
 }
 
 .page-footer a {
@@ -258,7 +266,7 @@ ul.no-bullets.social-icons {
   z-index: 0;
   color: #FFFAF6 !important;
   font-size: 45px !important;
-  font-family: 'TTCommons-Black';
+  font-family: 'TTCommons-white';
   text-shadow: 2px 2px #FFA489;
   max-width: 450px;
   line-height: 1.1 !important;
