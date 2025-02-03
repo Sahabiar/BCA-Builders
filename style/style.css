@@ -3,8 +3,8 @@
 :root {
   --white: #ffffff;
   --light-grey: #232323;
-  --gold: #c09c32;
-  --dark-gold: #e1b846;
+  --gold: #b57633;
+  --dark-gold: #824a38;
   --black: #21232a;
 }
 
@@ -18,6 +18,8 @@
 
 body {
   font-family: "EB Garamond", serif;
+  background-color: var(--light-grey);
+  color: var(--white);
 }
 .container {
   max-width: 1400px;
