@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <header class="body-font lg:h-10/12">
+  <header class="body-font w-fit">
     <nav class="lg:container lg:mx-auto container mx-auto">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="navbar-center">
-          <a class="btn btn-ghost text-xl"><img class="w-18" src="src/logo.png" alt=""> BCA
+          <a class="btn btn-ghost text-xl"><img class="w-18" src="src/BCA_builder logo.png" alt=""> BCA
             Builders</a>
         </div>
         <div class="navbar-end">
@@ -66,16 +66,35 @@
         </div>
       </div>
     </nav>
-    <div class="diff aspect-[12/6]">
-      <div class="diff-item-1">
-        <div class="bg-primary text-primary-content grid place-content-center text-9xl font-black">
-          BCA - Builders
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-screen">
+        <img src="src/banner.jpg" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div class="diff-item-2">
-        <div class="bg-base-200 grid place-content-center text-9xl font-black">BCA - Builders</div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="src/banner.jpg" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
       </div>
-      <div class="diff-resizer"></div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="src/banner.jpg" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="src/banner.jpg" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
     </div>
   </header>
   <main>
@@ -150,7 +169,7 @@
                 post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out
                 four
                 loko. 3 wolf moon brooklyn.</p>
-              <a class="text-indigo-500 inline-flex items-center">Learn More
+              <a href="#" class="cursor-pointer inline-flex items-center">Learn More
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -255,7 +274,7 @@
         <a href="https://sahabiar.com" class="text-white ml-1" rel="noopener noreferrer" target="_blank">@sahabiar</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a class="text-gray-500">
+        <a class="">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
             viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
