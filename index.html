@@ -7,6 +7,7 @@
   <title>BCA-Builders | Home</title>
   <link rel="shortcut icon" href="src/favico.png" type="image/x-icon">
   <!-- style link for UIcomponent Css -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <!-- style link for fontawsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -18,7 +19,6 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
     rel="stylesheet">
   <!-- style link for external style sheet -->
-  <link rel="stylesheet" href="style/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -27,11 +27,11 @@
 <!-- bg-gradient-to-t from-stone-300 from-10% via-stone-300 via-30% to-slate-50 to-90% -->
 
 <body>
-  <header class="pt-4 bg-(image: url('src/banner2.jpeg') bg-cover bg-center bg-no-repeat)">
+  <header class="h-screen pt-4 bg-(image: url('src/banner2.jpeg') bg-cover bg-center bg-no-repeat)">
     <nav class="container m-auto max-lg:border-b border-b-btn_color">
       <div class="navbar">
         <div class="navbar-start w-full">
-          <a class="cursor-pointer"><img class="w-20 h-20" src="src/BCA_builder logo.png" alt="Logo"></a>
+          <a class="cursor-pointer"><img class="w-20 h-20" src="src/logo.png" alt="Logo"></a>
           <h2 class="lg:text-3xl md:text-2xl ml-1 text-xl text-btn_color font-semibold">BCA - Builder's</h2>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -84,56 +84,88 @@
             Builders is committed to excellence in every build.</p>
         </div>
       </div>
-      <div class="m-auto w-4/6">
-        <img width="100%" src="src/banner2.jpeg" alt="Hero Image">
+      <div class="mt-5">
+        <div id="gallery" class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative lg:h-96 md:h-72 h-96 overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner1.jpg" class="" alt="banner image">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+              <img src="img/Banner2.jpg" class="" alt="">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner3.jpg" class="" alt="">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner4.jpg" class="" alt="">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner5.jpg" class="" alt="">
+            </div>
+            <!-- Item 6 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner6.jpg" class="" alt="">
+            </div>
+            <!-- Item 7 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner7.jpg" class="" alt="">
+            </div>
+            <!-- Item 8 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner8.jpg" class="" alt="">
+            </div>
+            <!-- Item 9 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner9.jpg" class="absolute block h-auto lg:w-full -translate-x-2/2 -translate-y-2/2"
+                alt="">
+            </div>
+            <!-- Item 10 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/Banner10.jpg" class="" alt="">
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
       </div>
     </div>
   </header>
   <main>
-    <section id="projects" class="body-font">
-      <div class="container py-14 px-4 mx-auto flex flex-wrap">
-        <div class="flex w-full mb-20 flex-wrap">
-          <h1
-            class="lg:text-5xl md:text-3xl sm:text-3xl text-2xl font-medium title-font text-[#824a38] lg:w-1/3 lg:mb-0 mb-4">
-            Master Cleanse
-            Reliac
-            Heirloom</h1>
-          <p class="lg:pl-6 lg:text-3xl md:text-2xl sm:text-sm lg:w-2/3 mx-auto leading-relaxed text-base">Whatever
-            cardigan tote bag tumblr hexagon
-            brooklyn
-            asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun
-            deep
-            jianbing selfies heirloom.</p>
-        </div>
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="src/Builder_house_1.webp">
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="src/Builder house 2.webp">
-            </div>
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="src/Builder house 3.webp">
-            </div>
-          </div>
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="src/Builder house 4.webp">
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="src/Builder house 5.webp">
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="src/Builder house 7.webp">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="About" class="text-white body-font bg-[#b57633]">
       <div class="container px-5 py-24 mx-auto flex flex-col">
-        <div class="lg:w-4/6 mx-auto">
+        <div class="lg:w-5/6 mx-auto">
           <div class="rounded-lg h-64 overflow-hidden">
             <img alt="content" class="object-cover object-center h-full w-full" src="src/cover.jpg">
           </div>
@@ -172,7 +204,146 @@
         </div>
       </div>
     </section>
-    <section id="Clients" class="text-gray-600 body-font">
+    <section id="projects" class="body-font">
+      <div class="container py-14 px-4 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1
+            class="lg:text-5xl md:text-3xl sm:text-3xl text-2xl font-medium title-font text-[#824a38] lg:w-1/3 lg:mb-0 mb-4">
+            Master Cleanse
+            Reliac
+            Heirloom</h1>
+          <p class="lg:pl-6 lg:text-3xl md:text-2xl sm:text-sm lg:w-2/3 mx-auto leading-relaxed text-base">Whatever
+            cardigan tote bag tumblr hexagon
+            brooklyn
+            asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun
+            deep
+            jianbing selfies heirloom.</p>
+        </div>
+        <div class="flex flex-wrap">
+          <div id="custom-controls-gallery" class="relative lg:w-2/6 w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mr-2">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/1.jpg" class="" alt="">
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="img/2.jpg" class="" alt="">
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/3.jpg" class="" alt="">
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/4.jpg" class="" alt="">
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/5.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/6.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/7.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/8.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/9.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/10.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/11.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/12.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/13.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/14.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/15.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/16.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/17.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/18.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/19.jpg" class="" alt="">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/20.jpg" class="" alt="">
+              </div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+              <button type="button"
+                class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                  class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                  <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 5H1m0 0 4 4M1 5l4-4" />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button type="button"
+                class="flex justify-center items-center h-full cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                  class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                  <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-4/6 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-2">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+            <img src="img/6.jpg" alt="">
+            <img src="img/7.jpg" alt="">
+            <img src="img/8.jpg" alt="">
+            <img src="img/9.jpg" alt="">
+            <img src="img/10.jpg" alt="">
+            <img src="img/11.jpg" alt="">
+            <img src="img/12.jpg" alt="">
+            <img src="img/13.jpg" alt="">
+            <img src="img/14.jpg" alt="">
+            <img src="img/15.jpg" alt="">
+            <img src="img/16.jpg" alt="">
+            <img src="img/17.jpg" alt="">
+            <img src="img/18.jpg" alt="">
+            <img src="img/19.jpg" alt="">
+            <img src="img/20.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Clients" class="text-gray-600 body-font bg-[#b57633]">
       <div class="container px-5 py-24 mx-auto">
         <h1 class="text-3xl font-medium title-font text-[#824a38] mb-12 text-center">Testimonials</h1>
         <div class="flex flex-wrap -m-4">
@@ -221,6 +392,134 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="Demo_design" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <h1 class="text-3xl font-medium title-font text-[#824a38] mb-12 text-center">Our Designs</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D1.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D2.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D3.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D4.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D5.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D6.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D7.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D8.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D9.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D10.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D11.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D12.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D13.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D14.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D15.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D16.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D17.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D18.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D19.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D20.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D21.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D22.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D23.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D24.jpg" alt="">
+          </div>
+          <div>
+            <img class=" h-auto max-w-full rounded-lg" src="src/D25.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D26.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D27.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D28.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D29.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D30.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D31.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D32.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D33.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D34.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D35.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D36.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D37.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D38.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D39.jpg" alt="">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="src/D40.jpg" alt="">
+          </div>
+        </div>
+
       </div>
     </section>
     <section id="contact" class="text-gray-600 body-font relative">
@@ -321,6 +620,7 @@
     }
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </body>
 
